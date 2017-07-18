@@ -8,3 +8,4 @@
 * 前端框架：easyUI
 * 数据库：MySQL
 * 项目管理工具：Maven
+* 服务器：Tomcat
