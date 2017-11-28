@@ -30,4 +30,17 @@ public class SpringMybatisTest {
         System.out.println(adminService.login(admin).toString());
 
     }
+    
+    @Test
+    public void testaddAdmin() {
+    		Admin admin = new Admin();
+        admin.setUsername("testAdmin");
+        admin.setPassword("123456");
+        System.out.println(adminService.addAdmin(admin).toString());
+    }
+    
+    @Test
+    public void testdeleteAdmin() {
+        System.out.println(adminService.deleteAdmin(3));
+    } 
 }
