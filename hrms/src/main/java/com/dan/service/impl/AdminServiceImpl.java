@@ -1,5 +1,6 @@
 package com.dan.service.impl;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -24,6 +25,11 @@ public class AdminServiceImpl implements AdminService {
 
 	public List<Admin> findAdmins(Map<String, Object> map) {
 		return adminDao.findAdmins(map);
+	}
+	
+	public static void main(String[] args) {
+		AdminServiceImpl adminServiceImpl = new AdminServiceImpl();
+		System.out.println(adminServiceImpl.findAdmins(new HashMap<String, Object>()));
 	}
 
 	public Integer getCount(Map<String, Object> map) {
